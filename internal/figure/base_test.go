@@ -5,7 +5,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
-
+// test
 func TestPassSquareArea(t *testing.T) {
 	square := f.Square{}
 	result := square.Area(2)
