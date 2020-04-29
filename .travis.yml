@@ -1,0 +1,14 @@
+language: go
+
+go:
+  - "1.14.x"
+
+before_install:
+  - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $GOPATH/bin v1.24.0
+
+jobs:
+  include:
+    - stage: Test
+      script: "make test"
+    - stage: Linter
+      script: "make lint"
