@@ -21,6 +21,8 @@ linters-settings:
     line-length: 140
   funlen:
     lines: 120
+  goimports:
+
 
 issues:
   exclude-rules:
